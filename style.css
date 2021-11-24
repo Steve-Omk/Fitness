@@ -90,5 +90,6 @@ h2 {
 body::before{
     width: -webkit-fill-available;
     height: 750px;
+        background: url('img2.jpg')no-repeat center center/cover;
 }
 }
