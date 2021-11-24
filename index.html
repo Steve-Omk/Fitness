@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using.plain html in Pug</title> -->
+    <title>#{title}</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1350px)" href="/phone.css"> -->
+    <script src="style.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Get this fitness membership for 60$ - Fill this form now!</h2><br>
+        <!-- <p>
+            | #{content}
+            | This is a plain html using pug
+        </p> -->
+        <form action="/" method="POST" id="contact">
+            <div>Name: <input type="text" name="name" id="name" placeholder="Enter your name"></div><br>
+
+            <div>Age: <input type="text" name="age" id="age" placeholder="Enter your age"></div><br>
+
+            <div>Gender: <input type="radio" name="gender" id="gender" placeholder="Gender">Male <input type="radio"
+                    name="gender" id="gender" placeholder="Gender">Female</div><br>
+
+            <div><label for="Address">Address:</label></div>
+            <div><textarea name="address" id="address" class="textarea" cols="80" rows="10" placeholder="Enter your address"></textarea>
+            </div><br>
+
+            <div><label for="More">more:</label></div>
+            <div><textarea name="more" id="more" class="textarea" cols="80" rows="10" placeholder="More about you"></textarea></div><br>
+
+            <div><button class="btn">Submit</button></div><br>
+        </form>
+    </div>
+</body>
+
+</html>
